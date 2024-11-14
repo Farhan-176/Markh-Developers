@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>A short description goes here.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>This section introduces the site’s purpose or key message.</p>
+    </section>
+
+    <!-- Pages Section -->
+    <section id="pages">
+        <h2>Our Pages</h2>
+        <div class="grid-container">
+            <div class="grid-item">Service 1</div>
+            <div class="grid-item">Service 2</div>
+            <div class="grid-item">Service 3</div>
+            <div class="grid-item">Service 4</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This section provides information about the brand and its purpose.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+
+</body>
+</html>
