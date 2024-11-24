@@ -1,0 +1,372 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.856);
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00aced;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contact Form */
+
+.contact-form {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5;
+}
+
+/* Contact Details */
+.contact-details {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-details h3 {
+    font-size: 1.8rem;
+    color: #0078ff;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.contact-details .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-details .social-icons a {
+    color: #0078ff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.contact-details .social-icons a:hover {
+    color: #ffd700;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 50px 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* Dark Mode Specific Styles for Contact Page */
+
+/* Navbar */
+body.dark-mode .navbar {
+    background: #1a1a1a; /* Dark background for navbar */
+}
+
+body.dark-mode .navbar .logo {
+    color: #fff; /* White logo text in dark mode */
+}
+
+body.dark-mode .navbar .nav-links a {
+    color: #eee; /* Light color for navbar links */
+}
+
+body.dark-mode .navbar .nav-links a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Contact Section */
+body.dark-mode .contact-section {
+    background-color: #1a1a1a; /* Dark background for contact section */
+    color: #eee;
+}
+
+body.dark-mode .contact-section h2 {
+    color: #ffd700; /* Gold color for heading */
+}
+
+body.dark-mode .contact-section p {
+    color: rgba(255, 255, 255, 0.9); /* Light color for text */
+}
+
+/* Contact Form */
+body.dark-mode .contact-form {
+    background-color: #333; /* Dark background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .contact-form label {
+    color: #ddd; /* Light label text */
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #555; /* Dark background for input fields */
+    border: 1px solid #777; /* Light border */
+    color: #fff; /* White text */
+}
+
+body.dark-mode .contact-form button {
+    background-color: #ffd700; /* Gold button */
+    color: #333; /* Dark text for button */
+    border: none;
+}
+
+body.dark-mode .contact-form button:hover {
+    background-color: #ffcc00; /* Lighter gold on hover */
+}
+
+/* Contact Details */
+body.dark-mode .contact-details {
+    text-align: center;
+    color: #ddd; /* Light color for text */
+}
+
+body.dark-mode .contact-details h3 {
+    color: #ffd700; /* Gold for subheading */
+}
+
+body.dark-mode .contact-details p {
+    color: rgba(255, 255, 255, 0.7); /* Light text for contact details */
+}
+
+/* Social Icons */
+body.dark-mode .contact-details .social-icons a {
+    color: #ffd700; /* Gold color for social media icons */
+}
+
+body.dark-mode .contact-details .social-icons a:hover {
+    color: #fff; /* White on hover */
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #1a1a1a; /* Dark footer background */
+}
+
+body.dark-mode footer p {
+    color: #ddd; /* Light color for footer text */
+}
+
+body.dark-mode footer .social-icons a {
+    color: #ffd700; /* Gold color for footer social icons */
+}
+
+body.dark-mode footer .social-icons a:hover {
+    color: #fff; /* White color on hover */
+}
+
+
+
+
+
+
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 150px;
+        border: 1px solid #555;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .contact-form {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-section p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}

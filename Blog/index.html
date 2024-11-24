@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">AwesomeBlog</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Awesome Blog</h1>
+            <p>Explore insightful articles that inspire and educate.</p>
+            <a href="#posts" class="btn">Read Blogs</a>
+        </div>
+    </header>
+
+    <!-- Blog Posts Section -->
+    <section id="posts" class="blog-section container">
+        <div class="blog-card">
+            <img src="images/trafficking1717502267-0.jpg" alt="Post 1">
+            <h2>Human trafficking: An underreported crime in Pakistan</h2>
+            <p class="date">Published on: November 4, 2024</p>
+            <p>Over 3 million people are living in modern slavery...</p>
+            <a href="post1.html" class="btn">Read More</a>
+        </div>
+        <div class="blog-card">
+            <img src="images/vision-20301716802070-0.jpg" alt="Post 2">
+            <h2>How the ambitious Saudi Vision 2030 can benefit Pakistan</h2>
+            <p class="date">Published on: November 22, 2024</p>
+            <p>While Saudi Vision 2030 prioritises domestic development, it's also a...</p>
+            <a href="post2.html" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Awesome Blog. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
